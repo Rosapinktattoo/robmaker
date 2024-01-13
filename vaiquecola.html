@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rob maker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+			 background-image: url('777.jpg');
+        }
+
+        .drawer-container {
+
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .drawer {
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            transition: left 0.3s ease-in-out;
+        }
+
+        .drawer-content {
+            padding: 20px;
+        }
+
+        .drawer-btn {
+            position: fixed;
+            left: 10px;
+            top: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+        }
+		 #textoPersonalizavel {
+            font-family: Arial, sans-serif;
+            font-size: 100px;
+            color: white;
+			 position: right;
+        }
+    </style>
+</head> 
+<body>
+    <div id="textoPersonalizavel">rob maker.</div>
+
+   <video autoplay loop muted playsinline>
+		<source src=".mp4" type="video/mp4">
+   </video>
+   
+  </section>
+    <div class="drawer-container">
+        <div class="drawer">
+            <div class="drawer-content">
+                <h2>rob maker</h2>
+                <p> <a href="teste2.html">inscrição de projetos</a></p>
+				<p> <a href="teste.html">inscrição rob maker</a></p>
+				<p> <a href="sera.html">projetos </a></p>
+		   </div>
+        </div>
+
+        <button class="drawer-btn" onclick="toggleDrawer()">&#9776;</button>
+    </div>
+
+    <script>
+        function toggleDrawer() {
+            var drawer = document.querySelector('.drawer');
+            var isOpen = drawer.style.left === '0px';
+            drawer.style.left = isOpen ? '-250px' : '0';
+        }
+    </script>
+
+</body>
+</html>

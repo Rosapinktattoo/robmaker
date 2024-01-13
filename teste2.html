@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rob Maker - Cadastro</title>
+    <style>
+        body {
+		
+            background-image: url('777.jpg'); /* Substitua pelo caminho da sua imagem */
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            height: 100vh;
+        }
+
+        .cadastro-container {
+            background-color: rgba(0, 0, 255, 0.5); /* Azul com opacidade */
+            padding: 22px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+            color: #FFFFFF; /* Branco */
+            width: 300px;
+            text-align: center;
+        }
+
+        .cadastro-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 9px 0;
+            box-sizing: border-box;
+        }
+
+        .cadastro-container button {
+            background-color:rgba(254, 254, 62, 0.7); /* Amarelo */
+            color: #0000FF; /* Azul */
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+		   .cadastro-container select {
+            width: 100%;
+            padding: 12px;
+            margin: 9px 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="cadastro-container">
+        <h1>inscrever projeto</h1>
+        <form>
+            <input type="text" placeholder="nome do projeto" required>
+            <br>
+            <input type="objetivo" placeholder="objetivo do projeto" required>
+            <br>
+            <input type="materias" placeholder="material utilizado" required>
+            <br>
+			<div>
+            <select id="função">
+                <option selected value="">função</option>
+                <option value="apresentador">apresentador</option>
+                <option value="codigo">codigo</option>
+                <option value="montagem">montagem</option>
+            </select>
+			
+        </div>		
+            <button type="submit">Cadastrar</button>
+			
+			
+        </form>
+    </div>
+	
+</body>
+</html>
